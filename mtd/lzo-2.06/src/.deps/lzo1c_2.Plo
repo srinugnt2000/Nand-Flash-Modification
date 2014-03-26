@@ -1,0 +1,99 @@
+src/lzo1c_2.lo: src/lzo1c_2.c src/compr1c.h src/config1c.h src/lzo_conf.h \
+  include/lzo/lzoconf.h config.h \
+  /home/stesalit/arm-2009q1/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/include-fixed/limits.h \
+  /home/stesalit/arm-2009q1/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/include-fixed/syslimits.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/limits.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/features.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/predefs.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/cdefs.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/wordsize.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/gnu/stubs.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/posix1_lim.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/local_lim.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/linux/limits.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/posix2_lim.h \
+  /home/stesalit/arm-2009q1/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/include/stddef.h \
+  include/lzo/lzodefs.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/string.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/string.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/string2.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/stdlib.h \
+  src/miniacc.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/assert.h \
+  src/lzo_ptr.h include/lzo/lzo1c.h src/lzo1b_de.h src/lzo_dict.h \
+  src/stats1c.h src/stats1b.h src/lzo1c_cc.h src/lzo1b_c.ch \
+  src/lzo1b_sm.ch src/lzo1b_tm.ch src/lzo1b_cr.ch src/lzo1b_cm.ch
+
+src/compr1c.h:
+
+src/config1c.h:
+
+src/lzo_conf.h:
+
+include/lzo/lzoconf.h:
+
+config.h:
+
+/home/stesalit/arm-2009q1/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/include-fixed/limits.h:
+
+/home/stesalit/arm-2009q1/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/include-fixed/syslimits.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/limits.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/features.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/predefs.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/cdefs.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/wordsize.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/gnu/stubs.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/posix1_lim.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/local_lim.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/linux/limits.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/posix2_lim.h:
+
+/home/stesalit/arm-2009q1/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/include/stddef.h:
+
+include/lzo/lzodefs.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/string.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/string.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/string2.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/stdlib.h:
+
+src/miniacc.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/assert.h:
+
+src/lzo_ptr.h:
+
+include/lzo/lzo1c.h:
+
+src/lzo1b_de.h:
+
+src/lzo_dict.h:
+
+src/stats1c.h:
+
+src/stats1b.h:
+
+src/lzo1c_cc.h:
+
+src/lzo1b_c.ch:
+
+src/lzo1b_sm.ch:
+
+src/lzo1b_tm.ch:
+
+src/lzo1b_cr.ch:
+
+src/lzo1b_cm.ch:

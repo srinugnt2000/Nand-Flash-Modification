@@ -1,0 +1,131 @@
+Ubl:
+=====
+No change used TI pre-compiled 
+
+
+U-Boot:
+=======
+
+1.Download the latest the U-Boot.
+2.configure do da850 board as shown
+	
+	make distclean CROSS_COMPILE=arm-none-linux-gnueabi-
+	make da850evm_config CROSS_COMPILE=arm-none-linux-gnueabi-
+
+3.change the configure file as shown,
+
+  Delete #define CONFIG_USE_SPI
+
+  and add the following lines  	
+	
+	#define CONFIG_USE_NAND   
+	#define CONFIG_MTD_NAND  
+
+4. In the serial driver info group add 
+
+	#define CONFIG_SYS_SPI_U_BOOT_OFFS	0x8000
+
+5. change the files accoring to them which was given
+
+6. compile the u-boot as shown
+
+	make all CROSS_COMPILE=arm-none-linux-gnueabi-
+
+
+Linux:
+=======
+
+1. configure linux according to given document 
+
+2. change the files 
+
+	arch/arm/mach-davinci/include/mach/nand.h
+	
+	dirvers/mtd/nand/nand_base.c
+
+	drivers/mtd/nand/davinci_nand.c
+
+	arch/arm/mach_davinci/board-da850-evm.c
+
+3. compile the kernel
+
+
+Porting U-boot and Ubl:
+=========================
+
+1. sfh_OMAP-L138.exe -flashType NAND -erase
+2. sfh_OMAP-L138.exe -flashType NAND ubl_AM1808_NAND.bin u-boot.bin
+
+Porting Linux and ramfs:
+========================
+
+1. start the board by placing jumper according boot configuration to boot from NAND
+
+2. enter the commands to flash linux 
+
+	loadb 0xc0700000
+
+3. now it will wait for the file we have to send file through kermit, after the completion enter
+
+	nand erase 0x200000 0x400000
+
+	nand write.e 0xc0700000 0x200000 0x300000
+
+4. now flash the ramdisk file in linux 
+
+	loadb 0xC1180000
+
+5. send the ramdisk file through kermet.
+
+	nand erase 0x600000 0x400000
+	
+	nand write.e 0xc1180000 0x600000 0x400000
+
+6. set the boot args as
+
+	setenv bootcmd 'nand read.e 0xc1180000 0x600000 0x400000; nboot 0xc0700000 0 0x200000; bootm'
+
+	setenv bootargs 'mem=64M console=ttyS2,115200n8 root=/dev/ram0 rw initrd=0xC1180000,4M ip=off'
+
+
+Ubifs file system creation:
+===========================
+	
+1. down load and cross compile the mtd utils 
+
+2. start the board and enter as root
+
+3. now erase the partition as 
+	 
+	flash_eraseall /dev/mtd4
+
+4. format the partiton
+		
+	ubiformat /dev/mtd4 -s 2048 -O 2048
+
+5. attach partiton
+
+	ubiattach /dev/ubi_ctrl -m 4 -O 2048
+
+6. create UBI volume
+
+	ubimkvol /dev/ubi0 -N rootfs –m
+
+7. mount 
+	
+	#mount -t ubifs ubi0:rootfs /mnt/card
+
+8. take a pendrive and format it to ext2 and extract all the file system in to pendrive same as like memory card
+
+9. connect the pendrive to board
+
+10. copy all the contents to the file system using command 
+
+	cp -a /media/sda/ /
+
+11. now restart the board and enter the boot args and boot commands as
+
+	setenv bootargs 'console=ttyS2,115200n8 rootwait=1 rw ubi.mtd=4,2048 rootfstype=ubifs root=ubi0:rootfs ip=off'
+
+
+12. restart the board and now it should boot normal.

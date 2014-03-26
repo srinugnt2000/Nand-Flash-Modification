@@ -1,0 +1,234 @@
+tests/chksum.o: tests/chksum.c include/lzo/lzoconf.h config.h \
+  /home/stesalit/arm-2009q1/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/include-fixed/limits.h \
+  /home/stesalit/arm-2009q1/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/include-fixed/syslimits.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/limits.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/features.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/predefs.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/cdefs.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/wordsize.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/gnu/stubs.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/posix1_lim.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/local_lim.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/linux/limits.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/posix2_lim.h \
+  /home/stesalit/arm-2009q1/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/include/stddef.h \
+  include/lzo/lzodefs.h examples/portab.h examples/portab_a.h \
+  src/miniacc.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/stdio.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/types.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/typesizes.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/libio.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/_G_config.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/wchar.h \
+  /home/stesalit/arm-2009q1/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/include/stdarg.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/stdio_lim.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sys_errlist.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/stdio.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/types.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/time.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/endian.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/endian.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/select.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/select.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigset.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/time.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/sysmacros.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/pthreadtypes.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/stat.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/stat.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/stdlib.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/alloca.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/string.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/string.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/string2.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/strings.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/inttypes.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/stdint.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/wchar.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/unistd.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/posix_opt.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/confname.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/getopt.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/ctype.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/errno.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/errno.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/linux/errno.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/errno.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/asm-generic/errno.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/asm-generic/errno-base.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/malloc.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/fcntl.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/fcntl.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/dirent.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/dirent.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/setjmp.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/setjmp.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/signal.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/signum.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/siginfo.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigaction.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigcontext.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/sigcontext.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigstack.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigthread.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/time.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/utime.h \
+  /home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/assert.h
+
+include/lzo/lzoconf.h:
+
+config.h:
+
+/home/stesalit/arm-2009q1/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/include-fixed/limits.h:
+
+/home/stesalit/arm-2009q1/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/include-fixed/syslimits.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/limits.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/features.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/predefs.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/cdefs.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/wordsize.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/gnu/stubs.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/posix1_lim.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/local_lim.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/linux/limits.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/posix2_lim.h:
+
+/home/stesalit/arm-2009q1/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/include/stddef.h:
+
+include/lzo/lzodefs.h:
+
+examples/portab.h:
+
+examples/portab_a.h:
+
+src/miniacc.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/stdio.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/types.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/typesizes.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/libio.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/_G_config.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/wchar.h:
+
+/home/stesalit/arm-2009q1/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.3/include/stdarg.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/stdio_lim.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sys_errlist.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/stdio.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/types.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/time.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/endian.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/endian.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/select.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/select.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigset.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/time.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/sysmacros.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/pthreadtypes.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/stat.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/stat.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/stdlib.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/alloca.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/string.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/string.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/string2.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/strings.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/inttypes.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/stdint.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/wchar.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/unistd.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/posix_opt.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/confname.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/getopt.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/ctype.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/errno.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/errno.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/linux/errno.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/errno.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/asm-generic/errno.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/asm-generic/errno-base.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/malloc.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/fcntl.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/fcntl.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/dirent.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/dirent.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/setjmp.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/setjmp.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/signal.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/signum.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/siginfo.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigaction.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigcontext.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/sigcontext.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigstack.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigthread.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/time.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/utime.h:
+
+/home/stesalit/arm-2009q1/bin/../arm-none-linux-gnueabi/libc/usr/include/assert.h:

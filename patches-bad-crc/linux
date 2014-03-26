@@ -1,0 +1,59 @@
+diff --git a/arch/arm/mach-davinci/board-dm365-evm.c b/arch/arm/mach-davinci/board-dm365-evm.c
+index 5d3946e..4bce9db 100644
+--- a/arch/arm/mach-davinci/board-dm365-evm.c
++++ b/arch/arm/mach-davinci/board-dm365-evm.c
+@@ -89,5 +89,17 @@ static struct mtd_partition davinci_nand_partitions[] = {
+ 	/* two blocks with bad block table (and mirror) at the end */
+ };
+ 
++static struct nand_ecclayout dm365_evm_nand_ecclayout = {
++	.eccbytes	= 40,
++	.eccpos		= {6, 7, 8, 9, 10, 11, 12, 13, 14, 15,
++			  22, 23, 24, 25, 26, 27, 28, 29, 30, 31,
++			  38, 39, 40, 41, 42, 43, 44, 45, 46, 47,
++			  54, 55, 56, 57, 58, 59, 60, 61, 62, 63,
++	},
++	.oobfree	= {{2, 4}, {16, 6}, {32, 6}, {48, 6} },
++};
++
+ static struct davinci_nand_pdata davinci_nand_data = {
+ 	.mask_chipsel		= BIT(14),
+ 	.parts			= davinci_nand_partitions,
+@@ -96,6 +108,7 @@ static struct davinci_nand_pdata davinci_nand_data = {
+ 	.ecc_mode		= NAND_ECC_HW,
+ 	.options		= NAND_USE_FLASH_BBT,
+ 	.ecc_bits		= 4,
++	.ecclayout		= &dm365_evm_nand_ecclayout,
+ };
+ 
+ static struct resource davinci_nand_resources[] = {
+diff --git a/arch/arm/mach-davinci/include/mach/nand.h b/arch/arm/mach-davinci/include/mach/nand.h
+index b2ad809..7c6be2b 100644
+--- a/arch/arm/mach-davinci/include/mach/nand.h
++++ b/arch/arm/mach-davinci/include/mach/nand.h
+@@ -83,6 +83,9 @@ struct davinci_nand_pdata {		/* platform_data */
+ 	/* Main and mirror bbt descriptor overrides */
+ 	struct nand_bbt_descr	*bbt_td;
+ 	struct nand_bbt_descr	*bbt_md;
++
++    /*Nand ECC layout*/
++    struct nand_ecclayout   *ecclayout;
+ };
+ 
+ #endif	/* __ARCH_ARM_DAVINCI_NAND_H */
+diff --git a/drivers/mtd/nand/davinci_nand.c b/drivers/mtd/nand/davinci_nand.c
+index 06ee8c8..4e4ed73 100644
+--- a/drivers/mtd/nand/davinci_nand.c
++++ b/drivers/mtd/nand/davinci_nand.c
+@@ -762,7 +762,10 @@ static int __init nand_davinci_probe(struct platform_device *pdev)
+ 			goto syndrome_done;
+ 		}
+ 		if (chunks == 4) {
+-			info->ecclayout = hwecc4_2048;
++			if (pdata->ecclayout != NULL)
++				info->ecclayout = *(pdata->ecclayout);
++			else
++				info->ecclayout = hwecc4_2048;
+ 			info->chip.ecc.mode = NAND_ECC_HW_OOB_FIRST;
+ 			goto syndrome_done;
+ 		}
